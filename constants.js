@@ -1,7 +1,7 @@
 
 exports.session_secret = 'temporary secret'
 
-//open id constants
+//open id connect constants
 exports.tokenURL_oidc = "enter token url of openidconnect here"
 exports.clientId_oidc = "enter openidconnect client id here"
 exports.clientSecret_oidc = "enter openidconnect client secret here"
