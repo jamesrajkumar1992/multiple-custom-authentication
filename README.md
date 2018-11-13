@@ -1,4 +1,4 @@
-#Multiple Custom Authentications:
+# Multiple Custom Authentications:
 
 This is a Node.js application which support Multiple Custom Authentications using passport strategies. Supported authentication types are SAML 2.0, oAuth 2.0, openID connect and openID.So you can support multiple clients with different types of authentications in same application.
 
@@ -7,18 +7,18 @@ We have created an api called /authenticate which takes authentication type as p
 
 Each authentication type needs certain credentials to work. For example, SAML 2.0 needs entry point, call back url and issuer id which can be obtained from your client.
 
-##IBM’s W3 SAML application:
+## IBM’s W3 SAML application:
 
 To use SAML 2.0 of IBM, Please onboard an w3 application in the below link. Follow the instructions in the site to get the credentials required for our configuration.
 
 https://w3.innovate.ibm.com/tools/sso/home.html
 
 
-##Usage:
+## Usage:
 
 Just clone our repository. Add the appropriate credentials for each / needed authentication type in constants.js file & update manifest.yml. That’s it! you are ready. Deploy the application to Bluemix and test it.
 
-##Testing:
+## Testing:
 Invoke the get api, 
 
 example:
@@ -32,7 +32,7 @@ On failed authentication you will be redirected to /failure where you can add yo
 
 Our manifest.yml is created for any cf application. Please modify this to update the host, name, memory , number of instances and services.
 
-##Npm modules used:
+## Npm modules used:
 express
 body-parser
 express-session
@@ -42,7 +42,7 @@ passport-saml
 passport-openid
 passport-idaas-openidconnect
 
-##Reference:
+## Reference:
 https://www.npmjs.com/package/passport-saml
 https://www.npmjs.com/package/passport-oauth2
 https://www.npmjs.com/package/passport-openid
