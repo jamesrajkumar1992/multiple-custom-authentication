@@ -1,4 +1,5 @@
-
+//session-secret We have used express-session which uses in memory session storage which is not meant for Production use. 
+//You can use any alternate module which uses db for secure session store.
 exports.session_secret = 'temporary secret'
 
 //open id connect constants
