@@ -205,14 +205,14 @@ app.post('/auth/saml/callback', function (req, res, next) {
  * callback success redirection
  */
 app.get('/success', function (req, res) {
-  res.status('200').send("success")
+  res.send("success")
 })
 
-app.get('/failure', function (req, res) { //TODO
+app.get('/failure', function (req, res) {
   res.send('failed');
 });
 
 
-var port = (process.env.PORT || 6013);
+var port = (process.env.PORT);
 app.listen(port);
 
